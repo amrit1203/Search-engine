@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4"> 
+
+        <!-- Name the application --> 
+        <display-name>ch1</display-name> 
+        <description>An example application which is used to play with some of the features of Tomcat</description> 
+
+        <!-- ========================================================== --> 
+        <!-- Servlets --> 
+        <!-- ========================================================== --> 
+
+        <!-- Simple Servlet, provide a name, class, description and map to URL /servlet/SimpleServlet --> 
+        <servlet> 
+                <servlet-name>SimpleSearch</servlet-name> 
+                <servlet-class>Search_Engine</servlet-class> 
+                
+        </servlet> 
+        <servlet-mapping> 
+                <servlet-name>SimpleSearch</servlet-name> 
+                <url-pattern>/Search</url-pattern> 
+        </servlet-mapping> 
+
+        <welcome-file-list> 
+                <welcome-file>index.jsp</welcome-file> 
+                
+        </welcome-file-list> 
+
+</web-app>
